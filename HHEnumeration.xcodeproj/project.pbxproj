@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E78E0031BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
+		8EA66E8E1BC9FF3A0013EEC9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */; };
+		8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAA01BC92DEE00230502 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FA9F1BC92DEE00230502 /* AppKit.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAA21BC92DEE00230502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAA11BC92DEE00230502 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAA61BC92DEE00230502 /* HHEnumeration.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8ED1FAA51BC92DEE00230502 /* HHEnumeration.xcscheme */; };
+		8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */; };
+		8ED1FAB51BC92E6B00230502 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB31BC92E6B00230502 /* DVTFoundation.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAB61BC92E6B00230502 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB41BC92E6B00230502 /* DVTKit.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAB91BC92E7100230502 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FABA1BC92E7100230502 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB81BC92E7100230502 /* IDEKit.framework */; settings = {ASSET_TAGS = (); }; };
+		8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1FABC1BC9307100230502 /* HHEnumFormater.m */; settings = {ASSET_TAGS = (); }; };
+		8EE1BC841BC936B0004293BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE1BC831BC936B0004293BD /* Cocoa.framework */; };
+		8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1BC861BC9375F004293BD /* MethodSwizzle.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E78E0011BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+HHEnumeration.h"; sourceTree = "<group>"; };
+		8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+HHEnumeration.m"; sourceTree = "<group>"; };
+		8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		8EA66E8F1BC9FF610013EEC9 /* HHKeyboardEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHKeyboardEvent.h; sourceTree = "<group>"; };
+		8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHKeyboardEvent.m; sourceTree = "<group>"; };
+		8ED1FA9C1BC92DEE00230502 /* HHEnumeration.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHEnumeration.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED1FA9F1BC92DEE00230502 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		8ED1FAA11BC92DEE00230502 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8ED1FAA51BC92DEE00230502 /* HHEnumeration.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = HHEnumeration.xcscheme; path = HHEnumeration.xcodeproj/xcshareddata/xcschemes/HHEnumeration.xcscheme; sourceTree = SOURCE_ROOT; };
+		8ED1FAA71BC92DEE00230502 /* HHEnumeration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHEnumeration.h; sourceTree = "<group>"; };
+		8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHEnumeration.m; sourceTree = "<group>"; };
+		8ED1FAAD1BC92DEE00230502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED1FAB31BC92E6B00230502 /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework; sourceTree = "<group>"; };
+		8ED1FAB41BC92E6B00230502 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEFoundation.framework; sourceTree = "<group>"; };
+		8ED1FAB81BC92E7100230502 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<group>"; };
+		8ED1FABB1BC9307100230502 /* HHEnumFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHEnumFormater.h; sourceTree = "<group>"; };
+		8ED1FABC1BC9307100230502 /* HHEnumFormater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHEnumFormater.m; sourceTree = "<group>"; };
+		8EE1BC831BC936B0004293BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8EE1BC851BC9375F004293BD /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		8EE1BC861BC9375F004293BD /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		8EEA1B631BC942050069266A /* XcodeMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeMisc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED1FA9A1BC92DEE00230502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA66E8E1BC9FF3A0013EEC9 /* Carbon.framework in Frameworks */,
+				8EE1BC841BC936B0004293BD /* Cocoa.framework in Frameworks */,
+				8ED1FAA01BC92DEE00230502 /* AppKit.framework in Frameworks */,
+				8ED1FAA21BC92DEE00230502 /* Foundation.framework in Frameworks */,
+				8ED1FAB61BC92E6B00230502 /* DVTKit.framework in Frameworks */,
+				8ED1FAB51BC92E6B00230502 /* DVTFoundation.framework in Frameworks */,
+				8ED1FABA1BC92E7100230502 /* IDEKit.framework in Frameworks */,
+				8ED1FAB91BC92E7100230502 /* IDEFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED1FA931BC92DED00230502 = {
+			isa = PBXGroup;
+			children = (
+				8ED1FAA31BC92DEE00230502 /* HHEnumeration */,
+				8ED1FA9E1BC92DEE00230502 /* Frameworks */,
+				8ED1FA9D1BC92DEE00230502 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED1FA9D1BC92DEE00230502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED1FA9C1BC92DEE00230502 /* HHEnumeration.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED1FA9E1BC92DEE00230502 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */,
+				8EE1BC831BC936B0004293BD /* Cocoa.framework */,
+				8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */,
+				8ED1FAB81BC92E7100230502 /* IDEKit.framework */,
+				8ED1FAB31BC92E6B00230502 /* DVTFoundation.framework */,
+				8ED1FAB41BC92E6B00230502 /* DVTKit.framework */,
+				8ED1FA9F1BC92DEE00230502 /* AppKit.framework */,
+				8ED1FAA11BC92DEE00230502 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ED1FAA31BC92DEE00230502 /* HHEnumeration */ = {
+			isa = PBXGroup;
+			children = (
+				8ED1FAA71BC92DEE00230502 /* HHEnumeration.h */,
+				8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */,
+				8ED1FABB1BC9307100230502 /* HHEnumFormater.h */,
+				8ED1FABC1BC9307100230502 /* HHEnumFormater.m */,
+				8EA66E8F1BC9FF610013EEC9 /* HHKeyboardEvent.h */,
+				8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */,
+				8E78E0011BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.h */,
+				8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */,
+				8EE1BC851BC9375F004293BD /* MethodSwizzle.h */,
+				8EE1BC861BC9375F004293BD /* MethodSwizzle.m */,
+				8EEA1B631BC942050069266A /* XcodeMisc.h */,
+				8ED1FAA41BC92DEE00230502 /* Supporting Files */,
+			);
+			path = HHEnumeration;
+			sourceTree = "<group>";
+		};
+		8ED1FAA41BC92DEE00230502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED1FAAD1BC92DEE00230502 /* Info.plist */,
+				8ED1FAA51BC92DEE00230502 /* HHEnumeration.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED1FA9B1BC92DEE00230502 /* HHEnumeration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED1FAB01BC92DEE00230502 /* Build configuration list for PBXNativeTarget "HHEnumeration" */;
+			buildPhases = (
+				8ED1FA981BC92DEE00230502 /* Sources */,
+				8ED1FA991BC92DEE00230502 /* Resources */,
+				8ED1FA9A1BC92DEE00230502 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHEnumeration;
+			productName = HHEnumeration;
+			productReference = 8ED1FA9C1BC92DEE00230502 /* HHEnumeration.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED1FA941BC92DED00230502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = huaxi;
+				TargetAttributes = {
+					8ED1FA9B1BC92DEE00230502 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8ED1FA971BC92DED00230502 /* Build configuration list for PBXProject "HHEnumeration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8ED1FA931BC92DED00230502;
+			productRefGroup = 8ED1FA9D1BC92DEE00230502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED1FA9B1BC92DEE00230502 /* HHEnumeration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED1FA991BC92DEE00230502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED1FAA61BC92DEE00230502 /* HHEnumeration.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED1FA981BC92DEE00230502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E78E0031BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m in Sources */,
+				8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */,
+				8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */,
+				8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */,
+				8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8ED1FAAE1BC92DEE00230502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		8ED1FAAF1BC92DEE00230502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		8ED1FAB11BC92DEE00230502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HHEnumeration/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huaxi.HHEnumeration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		8ED1FAB21BC92DEE00230502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(DEVELOPER_DIR)/../Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HHEnumeration/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huaxi.HHEnumeration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED1FA971BC92DED00230502 /* Build configuration list for PBXProject "HHEnumeration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED1FAAE1BC92DEE00230502 /* Debug */,
+				8ED1FAAF1BC92DEE00230502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED1FAB01BC92DEE00230502 /* Build configuration list for PBXNativeTarget "HHEnumeration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED1FAB11BC92DEE00230502 /* Debug */,
+				8ED1FAB21BC92DEE00230502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED1FA941BC92DED00230502 /* Project object */;
+}
