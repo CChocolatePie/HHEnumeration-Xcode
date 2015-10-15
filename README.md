@@ -7,7 +7,9 @@ This plugin is use to autocompletion prefix of enum members for Objective-C
 - before
 ![before](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/before.gif)
 - after
-![before](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/after.gif)
+![after](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/after.gif)
+
+
 #### How to use?
 - Download HHEnumeration and build the target.
 - It will be installed this folder:          
