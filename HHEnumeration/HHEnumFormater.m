@@ -13,8 +13,7 @@
 
 @implementation HHEnumFormater
 + (NSString *)enumFormaterWithString:(NSString *)str;
-{
-// 
+{ 
     if ([str isEqualToString:@"<#expression#>"]) return nil;
     if ([str isEqualToString:@"<#constant#>"]) return nil;
     if ([str isEqualToString:@"<#statements#>"]) return nil;
