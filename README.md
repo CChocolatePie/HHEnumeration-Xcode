@@ -1,9 +1,8 @@
 <p align="center" >
 <img src="bugEnding.png" title="bugEnding Organization logo" float=left>
 </p>
-<p align="center" >
-#### Try our best to be lazy but easier to code!
--
+<p>
+Try our best to be lazy but easier to code!
 </p>
 
 ### What is it?
@@ -24,16 +23,20 @@ This plugin is used to autocompletion prefix of enum members for Objective-C
 
 ### What? it doesn't work?
 - Be sure the plugin can be installed in this folder
-  (`~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`)
-- Command + Q quit Xcode,when open again you may have this dialogue please click `load bundle`
+   (`~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`)
+- Command + Q quit Xcode,when open again you may have this dialogue
+   please click `load bundle`
+
    ![dialogue](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/loadbundle.jpeg)
 - Follow me,open plug-ins folder
+
    ![showpackage](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/showpackage.png)
    ![replace1](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/replace1.png)
    ![replace2](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/replace2.png)
 - What? you don't have any other plugin?
+
    open `terminal` run this `defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID`
-to get your current Xcode's UUID, and add this UUID to plugin  Info.plist->DVTPlugInCompatibilityUUIDs 
+   to get your current Xcode's UUID, and add this UUID to plugin  Info.plist->DVTPlugInCompatibilityUUIDs 
    ![addUUID](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/addUUID.png)
     
 
