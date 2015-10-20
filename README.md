@@ -1,26 +1,31 @@
 <p align="center" >
 <img src="bugEnding.png" title="bugEnding Organization logo" float=left>
 </p>
-<p align="center" >
+<p>
 Try our best to be lazy but easier to code!
 </p>
 
+-
 ### What is it?
 This plugin is used to autocompletion prefix of enum members for Objective-C
 
-
+-
 ### What effects does it make?
 #### before
 ![before](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/before.gif)
 #### after
 ![after](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/after.gif)
 
+-
 ### How to use?
-- Download HHEnumeration and build the target.
+- Use [Alcatraz](https://github.com/supermarin/Alcatraz) to install.Or download HHEnumeration and build the target.
 - It will be installed this folder  by default:          
 `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
 - Xcode version 6.1+
+- Tips:HHEnumeration is depends on IDEIndex,Xcode will auto update the IDEIndex when you open a project,
+so it will take some seconds. And if you found it doesn't work please use `Command + S` IDEIndex will be updated too.
 
+-
 ### What? it doesn't work?
 - Be sure the plugin can be installed in this folder
    (`~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`)
@@ -37,11 +42,10 @@ This plugin is used to autocompletion prefix of enum members for Objective-C
 <br/> ![addUUID](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/addUUID.png)
     
 
+-
+### The MIT License (MIT)
 
-### License
-The MIT License (MIT)
-
-Copyright (c) 2015 
+`Copyright (c) 2015 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -59,4 +63,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.`
