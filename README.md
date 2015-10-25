@@ -22,7 +22,8 @@ This plugin is used to autocompletion prefix of enum members for Objective-C
 - It will be installed this folder  by default:          
 `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
 - Xcode version 6.1+
-- Tips:HHEnumeration depends on IDEIndex,Xcode will auto update the IDEIndex when you open a project,
+- Tips:<br/>
+HHEnumeration depends on IDEIndex,Xcode will auto update the IDEIndex when you open a project,
 so it will take some seconds. And if you found it doesn't work please use `Command + S` IDEIndex will be updated too.
 
 -
