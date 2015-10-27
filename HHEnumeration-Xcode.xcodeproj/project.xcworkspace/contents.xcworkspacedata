@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HHEnumeration.xcodeproj">
+      location = "self:/Users/huaxi/myFiles/HHEnumeration-Xcode/HHEnumeration-Xcode.xcodeproj">
    </FileRef>
 </Workspace>

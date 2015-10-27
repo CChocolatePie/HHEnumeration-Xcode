@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8ED1FA9B1BC92DEE00230502"
-               BuildableName = "HHEnumeration.xcplugin"
-               BlueprintName = "HHEnumeration"
-               ReferencedContainer = "container:HHEnumeration.xcodeproj">
+               BuildableName = "HHEnumeration-Xcode.xcplugin"
+               BlueprintName = "HHEnumeration-Xcode"
+               ReferencedContainer = "container:HHEnumeration-Xcode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "8966AFCA173EB7BF004150C0"
                BuildableName = "HHEnumerationTests.xctest"
                BlueprintName = "HHEnumerationTests"
-               ReferencedContainer = "container:HHEnumeration.xcodeproj">
+               ReferencedContainer = "container:HHEnumeration-Xcode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ED1FA9B1BC92DEE00230502"
-            BuildableName = "HHEnumeration.xcplugin"
-            BlueprintName = "HHEnumeration"
-            ReferencedContainer = "container:HHEnumeration.xcodeproj">
+            BuildableName = "HHEnumeration-Xcode.xcplugin"
+            BlueprintName = "HHEnumeration-Xcode"
+            ReferencedContainer = "container:HHEnumeration-Xcode.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
