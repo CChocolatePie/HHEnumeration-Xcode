@@ -8,15 +8,15 @@
 
 #import <AppKit/AppKit.h>
 @class IDEIndex;
-
 @class HHEnumeration;
+
+
 
 @interface HHEnumeration : NSObject
 
-+ (instancetype)sharedPlugin;
-+ (void)pluginDidLoad:(NSBundle *)plugin;
-
 @property (nonatomic, strong, readonly) IDEIndex *index;
 @property (assign, nonatomic) BOOL isOC;
+
++ (instancetype)sharedPlugin;
 
 @end

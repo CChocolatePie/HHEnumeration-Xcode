@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E78E0031BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
+		8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */; settings = {ASSET_TAGS = (); }; };
 		8EA66E8E1BC9FF3A0013EEC9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */; };
 		8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */; settings = {ASSET_TAGS = (); }; };
+		8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */; settings = {ASSET_TAGS = (); }; };
+		8EC8D3BE1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BD1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata */; settings = {ASSET_TAGS = (); }; };
 		8ED1FAA01BC92DEE00230502 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FA9F1BC92DEE00230502 /* AppKit.framework */; settings = {ASSET_TAGS = (); }; };
 		8ED1FAA21BC92DEE00230502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAA11BC92DEE00230502 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
 		8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */; };
@@ -24,12 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E78E0011BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+HHEnumeration.h"; sourceTree = "<group>"; };
-		8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+HHEnumeration.m"; sourceTree = "<group>"; };
+		8E4D2B1B1BE44DEE0064857F /* HHCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCompletionItem.h; sourceTree = "<group>"; };
+		8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCompletionItem.m; sourceTree = "<group>"; };
 		8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		8EA66E8F1BC9FF610013EEC9 /* HHKeyboardEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHKeyboardEvent.h; sourceTree = "<group>"; };
 		8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHKeyboardEvent.m; sourceTree = "<group>"; };
-		8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HHEnumeration-Xcode.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC8D3BA1BE3BA1D0020D78F /* HHCompletionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCompletionStrategy.h; sourceTree = "<group>"; };
+		8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCompletionStrategy.m; sourceTree = "<group>"; };
+		8EC8D3BD1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "HHEnumeration-Xcode.xcplugindata"; sourceTree = "<group>"; };
+		8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HHEnumeration-Xcode.ideplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED1FA9F1BC92DEE00230502 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		8ED1FAA11BC92DEE00230502 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8ED1FAA71BC92DEE00230502 /* HHEnumeration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHEnumeration.h; sourceTree = "<group>"; };
@@ -70,7 +75,7 @@
 		8ED1FA931BC92DED00230502 = {
 			isa = PBXGroup;
 			children = (
-				8ED1FAA31BC92DEE00230502 /* HHEnumeration */,
+				8ED1FAA31BC92DEE00230502 /* HHEnumeration-Xcode */,
 				8ED1FA9E1BC92DEE00230502 /* Frameworks */,
 				8ED1FA9D1BC92DEE00230502 /* Products */,
 			);
@@ -79,7 +84,7 @@
 		8ED1FA9D1BC92DEE00230502 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.xcplugin */,
+				8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.ideplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +104,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8ED1FAA31BC92DEE00230502 /* HHEnumeration */ = {
+		8ED1FAA31BC92DEE00230502 /* HHEnumeration-Xcode */ = {
 			isa = PBXGroup;
 			children = (
 				8ED1FAA71BC92DEE00230502 /* HHEnumeration.h */,
@@ -108,19 +113,23 @@
 				8ED1FABC1BC9307100230502 /* HHEnumFormater.m */,
 				8EA66E8F1BC9FF610013EEC9 /* HHKeyboardEvent.h */,
 				8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */,
-				8E78E0011BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.h */,
-				8E78E0021BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m */,
+				8E4D2B1B1BE44DEE0064857F /* HHCompletionItem.h */,
+				8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */,
+				8EC8D3BA1BE3BA1D0020D78F /* HHCompletionStrategy.h */,
+				8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */,
 				8EE1BC851BC9375F004293BD /* MethodSwizzle.h */,
 				8EE1BC861BC9375F004293BD /* MethodSwizzle.m */,
 				8EEA1B631BC942050069266A /* XcodeMisc.h */,
 				8ED1FAA41BC92DEE00230502 /* Supporting Files */,
 			);
+			name = "HHEnumeration-Xcode";
 			path = HHEnumeration;
 			sourceTree = "<group>";
 		};
 		8ED1FAA41BC92DEE00230502 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8D3BD1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata */,
 				8ED1FAAD1BC92DEE00230502 /* Info.plist */,
 				8EFD78C21BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme */,
 			);
@@ -144,7 +153,7 @@
 			);
 			name = "HHEnumeration-Xcode";
 			productName = HHEnumeration;
-			productReference = 8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.xcplugin */;
+			productReference = 8ED1FA9C1BC92DEE00230502 /* HHEnumeration-Xcode.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -183,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC8D3BE1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata in Resources */,
 				8EFD78C31BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,10 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E78E0031BCD54B0009AB978 /* IDEIndexCompletionStrategy+HHEnumeration.m in Sources */,
+				8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */,
 				8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */,
 				8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */,
 				8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */,
+				8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */,
 				8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +303,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HHEnumeration/Info.plist;
-				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Developer/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaxi.HHEnumeration;
 				PRODUCT_NAME = "HHEnumeration-Xcode";
-				WRAPPER_EXTENSION = xcplugin;
+				WRAPPER_EXTENSION = ideplugin;
 			};
 			name = Debug;
 		};
@@ -312,11 +323,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = HHEnumeration/Info.plist;
-				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Developer/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaxi.HHEnumeration;
 				PRODUCT_NAME = "HHEnumeration-Xcode";
-				WRAPPER_EXTENSION = xcplugin;
+				WRAPPER_EXTENSION = ideplugin;
 			};
 			name = Release;
 		};

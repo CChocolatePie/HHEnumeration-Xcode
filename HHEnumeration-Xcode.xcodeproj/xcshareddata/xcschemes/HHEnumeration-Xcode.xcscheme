@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8ED1FA9B1BC92DEE00230502"
-               BuildableName = "HHEnumeration-Xcode.xcplugin"
+               BuildableName = "HHEnumeration-Xcode.ideplugin"
                BlueprintName = "HHEnumeration-Xcode"
                ReferencedContainer = "container:HHEnumeration-Xcode.xcodeproj">
             </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ED1FA9B1BC92DEE00230502"
-            BuildableName = "HHEnumeration-Xcode.xcplugin"
+            BuildableName = "HHEnumeration-Xcode.ideplugin"
             BlueprintName = "HHEnumeration-Xcode"
             ReferencedContainer = "container:HHEnumeration-Xcode.xcodeproj">
          </BuildableReference>

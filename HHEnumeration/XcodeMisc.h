@@ -109,6 +109,8 @@
 
 @interface DVTTextCompletionController : NSObject
 
+- (BOOL)acceptCurrentCompletion;
+- (BOOL)_showCompletionsAtCursorLocationExplicitly:(BOOL)arg1;
 
 @end
 
@@ -123,8 +125,8 @@
     long long _priority;
     NSString *_name;
 }
-@property long long priority; // @synthesize priority=_priority;
-@property(readonly) NSString *name; // @synthesize name=_name;
+@property long long priority;
+@property(readonly) NSString *name; 
 @property(readonly) BOOL notRecommended;
 @property(readonly) DVTSourceCodeSymbolKind *symbolKind;
 @property(readonly) NSAttributedString *descriptionText;
