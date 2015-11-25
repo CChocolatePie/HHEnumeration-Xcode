@@ -4,7 +4,7 @@
 
 -
 ### What is it?
-This plugin is used to autocompletion prefix of enum members for Objective-C
+This plugin is used to autocompletion enum members for Objective-C
 
 -
 ###Important
@@ -35,7 +35,7 @@ so it will take some seconds. And if you found it doesn't work please use `Comma
    please click `load bundle`
 - open `terminal` run this `defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID`
   to get your current Xcode's UUID, and add this UUID to plugin project  Info.plist->DVTPlugInCompatibilityUUIDs 
-    <br/> rebuile it.
+    <br/> rebuild it.
 <br/> ![addUUID](https://raw.githubusercontent.com/bugEnding/HHEnumeration-xcode/master/img/addUUID.png)
     
 
