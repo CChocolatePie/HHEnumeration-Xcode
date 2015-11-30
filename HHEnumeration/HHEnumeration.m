@@ -104,7 +104,7 @@ BOOL _isFirstNoti;
             }
 
             NSMutableArray *tempArray = [self startFindEnum:enumName];
-            if (tempArray.count >= 2) {
+            if (tempArray.count >= 1) {
 //                        [textView insertText:@"" replacementRange:selectedRange];
 //                        [textView replaceCharactersInRange:selectedRange withString:@""];
                 //  以上两个方式 删掉  撤销操作时 会 出现 bug
