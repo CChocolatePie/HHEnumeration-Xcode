@@ -8,7 +8,6 @@
 
 #import "HHCompletionItem.h"
 
-extern DVTSourceCodeSymbolKind *currentKind;
 
 @interface HHCompletionItem ()
 
@@ -65,7 +64,7 @@ extern DVTSourceCodeSymbolKind *currentKind;
 // 类型的图标   前面的   E  K  C  T 。。。
 - (DVTSourceCodeSymbolKind *)symbolKind
 {
-    return currentKind;
+    return nil;
 }
 
 @end

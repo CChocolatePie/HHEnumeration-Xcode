@@ -10,18 +10,24 @@
 #import "HHEnumeration.h"
 
 
-extern NSMutableArray *currentItems;
+extern NSArray *currentItems;
 extern BOOL shouldCall;
+extern BOOL isOC;
+
 
 @implementation HHCompletionStrategy
 
 - (id)completionItemsForDocumentLocation:(DVTTextDocumentLocation *)arg1 context:(NSDictionary *)arg2 highlyLikelyCompletionItems:(id *)arg3 areDefinitive:(char *)arg4
 {
-//    id language = [arg2 objectForKey:@"DVTTextCompletionContextSourceCodeLanguage"];
-//    BOOL isOC = [[language identifier] isEqualToString:@"Xcode.SourceCodeLanguage.Objective-C"];
     // 激活插件
-    [HHEnumeration sharedPlugin];
-
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [HHEnumeration sharedPlugin];
+    });
+    
+    id language = [arg2 objectForKey:@"DVTTextCompletionContextSourceCodeLanguage"];
+    isOC = [[language identifier] isEqualToString:@"Xcode.SourceCodeLanguage.Objective-C"];
+    
     NSMutableArray *completions = nil;
     if (shouldCall)
     {
@@ -30,6 +36,7 @@ extern BOOL shouldCall;
         *arg4 = 1;
         shouldCall = NO;
         currentItems = nil;
+
     }
 
     return completions;

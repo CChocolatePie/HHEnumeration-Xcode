@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E02B1591C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B1581C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
+		8E02B15C1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B15B1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
 		8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */; settings = {ASSET_TAGS = (); }; };
 		8EA66E8E1BC9FF3A0013EEC9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */; };
 		8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */; settings = {ASSET_TAGS = (); }; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E02B1571C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTTextCompletionController+HHEnumeration.h"; sourceTree = "<group>"; };
+		8E02B1581C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTTextCompletionController+HHEnumeration.m"; sourceTree = "<group>"; };
+		8E02B15A1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTTextCompletionListWindowController+HHEnumeration.h"; sourceTree = "<group>"; };
+		8E02B15B1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTTextCompletionListWindowController+HHEnumeration.m"; sourceTree = "<group>"; };
 		8E4D2B1B1BE44DEE0064857F /* HHCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCompletionItem.h; sourceTree = "<group>"; };
 		8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCompletionItem.m; sourceTree = "<group>"; };
 		8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
@@ -117,6 +123,10 @@
 				8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */,
 				8EC8D3BA1BE3BA1D0020D78F /* HHCompletionStrategy.h */,
 				8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */,
+				8E02B1571C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.h */,
+				8E02B1581C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m */,
+				8E02B15A1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.h */,
+				8E02B15B1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m */,
 				8EE1BC851BC9375F004293BD /* MethodSwizzle.h */,
 				8EE1BC861BC9375F004293BD /* MethodSwizzle.m */,
 				8EEA1B631BC942050069266A /* XcodeMisc.h */,
@@ -205,11 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */,
+				8E02B1591C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m in Sources */,
 				8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */,
 				8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */,
 				8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */,
 				8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */,
 				8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */,
+				8E02B15C1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

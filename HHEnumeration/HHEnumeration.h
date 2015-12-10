@@ -17,6 +17,8 @@
 @property (nonatomic, strong, readonly) IDEIndex *index;
 @property (assign, nonatomic) BOOL isOC;
 
+//@property (assign, nonatomic) BOOL shouldCall;
+
 + (instancetype)sharedPlugin;
 
 @end

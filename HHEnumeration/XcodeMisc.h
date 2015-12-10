@@ -48,6 +48,7 @@
 
 @interface IDEWorkspace : NSObject
 
+
 @end
 
 
@@ -136,7 +137,7 @@
 @end
 
 @interface DVTTextCompletionListWindowController : NSWindowController
-
+- (id)_selectedCompletionItem;
 @end
 
 
