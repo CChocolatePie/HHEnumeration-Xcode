@@ -25,7 +25,8 @@ New version will be installed here<br/>
 - Xcode version 6.1+
 - Tips:<br/>
 HHEnumeration depends on IDEIndex,Xcode will auto update the IDEIndex when you open a project,
-so it will take some seconds. And if you found it doesn't work please use `Command + S` IDEIndex will be updated too.
+so it will take some seconds. And if you found it doesn't work please use `Command + S` IDEIndex will be updated too.<br/>
+- support enum that define  `typedef NS_ENUM( , )` and `typedef NS_OPTIONS( , )`
 
 -
 ### What? it doesn't work?
