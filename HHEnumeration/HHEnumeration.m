@@ -131,9 +131,12 @@ BOOL _isFirstNoti;
                     }
                 }
                 
-                if(self.matchString1.length > 0){
+                if((self.matchString1 != nil) && (self.matchString1.length > 0)){
                     
                     NSUInteger length = self.matchString2.length;
+                    if (storageText.length < length) {
+                        return;
+                    }
                     NSRange rang = NSMakeRange(selectedRange.location - length, length);
                     NSString *subStr = [storageText substringWithRange:rang];
                     
@@ -141,6 +144,7 @@ BOOL _isFirstNoti;
                         [subStr isEqualToString:self.matchString2] ) {
                         
                         self.matchString1 = nil;
+                        self.matchString2 = nil;
                         shouldCall = YES;
                         currentItems = [NSMutableArray arrayWithArray:self.enumMembers];
                         [HHKeyboardEvent eventWithKeyCode:kVK_Escape];
