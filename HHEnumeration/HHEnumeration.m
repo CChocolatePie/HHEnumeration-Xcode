@@ -125,8 +125,10 @@ BOOL _isFirstNoti;
                     if (tempArray.count >= 1) {
                         
                         self.enumMembers = tempArray;
+                        // 点语法 赋值 时
                         self.matchString1 = [NSString stringWithFormat:@".%@ = ",displayText];
-                        self.matchString2 = [NSString stringWithFormat:@".%@ == ",displayText];
+                        // 点语法 或 枚举变量   判断枚举类型 时
+                        self.matchString2 = [NSString stringWithFormat:@"%@ == ",displayText];
                         
                     }
                 }

@@ -10,6 +10,7 @@ This plugin is used to autocompletion enum members for Objective-C
 ###Important
 Please delete old version plugin<br/>
 `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`<br/>
+use `rm -r ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/HHEnumeration.xcplugin` in `terminal`
 New version will be installed here<br/>
 `~/Library/Developer/Xcode/Plug-ins`
 
