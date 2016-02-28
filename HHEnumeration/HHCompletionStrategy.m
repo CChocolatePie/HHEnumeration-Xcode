@@ -19,6 +19,7 @@ extern BOOL isOC;
 
 - (id)completionItemsForDocumentLocation:(DVTTextDocumentLocation *)arg1 context:(NSDictionary *)arg2 highlyLikelyCompletionItems:(id *)arg3 areDefinitive:(char *)arg4
 {
+    
     // 激活插件
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -38,7 +39,7 @@ extern BOOL isOC;
         currentItems = nil;
 
     }
-
+    
     return completions;
 
 }

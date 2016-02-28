@@ -7,24 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E02B1591C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B1581C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
-		8E02B15C1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B15B1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m */; settings = {ASSET_TAGS = (); }; };
-		8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */; settings = {ASSET_TAGS = (); }; };
+		8E02B1591C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B1581C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m */; };
+		8E02B15C1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02B15B1C18966D00E050D5 /* DVTTextCompletionListWindowController+HHEnumeration.m */; };
+		8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D2B1C1BE44DEE0064857F /* HHCompletionItem.m */; };
 		8EA66E8E1BC9FF3A0013EEC9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA66E8D1BC9FF3A0013EEC9 /* Carbon.framework */; };
-		8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */; settings = {ASSET_TAGS = (); }; };
-		8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */; settings = {ASSET_TAGS = (); }; };
-		8EC8D3BE1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BD1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata */; settings = {ASSET_TAGS = (); }; };
-		8ED1FAA01BC92DEE00230502 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FA9F1BC92DEE00230502 /* AppKit.framework */; settings = {ASSET_TAGS = (); }; };
-		8ED1FAA21BC92DEE00230502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAA11BC92DEE00230502 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		8EA66E911BC9FF610013EEC9 /* HHKeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */; };
+		8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BB1BE3BA1D0020D78F /* HHCompletionStrategy.m */; };
+		8EC8D3BE1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D3BD1BE3BAAF0020D78F /* HHEnumeration-Xcode.xcplugindata */; };
+		8ED1FAA01BC92DEE00230502 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FA9F1BC92DEE00230502 /* AppKit.framework */; };
+		8ED1FAA21BC92DEE00230502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAA11BC92DEE00230502 /* Foundation.framework */; };
 		8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */; };
-		8ED1FAB51BC92E6B00230502 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB31BC92E6B00230502 /* DVTFoundation.framework */; settings = {ASSET_TAGS = (); }; };
-		8ED1FAB61BC92E6B00230502 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB41BC92E6B00230502 /* DVTKit.framework */; settings = {ASSET_TAGS = (); }; };
-		8ED1FAB91BC92E7100230502 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */; settings = {ASSET_TAGS = (); }; };
-		8ED1FABA1BC92E7100230502 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB81BC92E7100230502 /* IDEKit.framework */; settings = {ASSET_TAGS = (); }; };
-		8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1FABC1BC9307100230502 /* HHEnumFormater.m */; settings = {ASSET_TAGS = (); }; };
+		8ED1FAB51BC92E6B00230502 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB31BC92E6B00230502 /* DVTFoundation.framework */; };
+		8ED1FAB61BC92E6B00230502 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB41BC92E6B00230502 /* DVTKit.framework */; };
+		8ED1FAB91BC92E7100230502 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */; };
+		8ED1FABA1BC92E7100230502 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED1FAB81BC92E7100230502 /* IDEKit.framework */; };
 		8EE1BC841BC936B0004293BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE1BC831BC936B0004293BD /* Cocoa.framework */; };
-		8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1BC861BC9375F004293BD /* MethodSwizzle.m */; settings = {ASSET_TAGS = (); }; };
-		8EFD78C31BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD78C21BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme */; settings = {ASSET_TAGS = (); }; };
+		8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1BC861BC9375F004293BD /* MethodSwizzle.m */; };
+		8EFD78C31BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD78C21BDF110400BB7A22 /* HHEnumeration-Xcode.xcscheme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +49,6 @@
 		8ED1FAB41BC92E6B00230502 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
 		8ED1FAB71BC92E7100230502 /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEFoundation.framework; sourceTree = "<group>"; };
 		8ED1FAB81BC92E7100230502 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<group>"; };
-		8ED1FABB1BC9307100230502 /* HHEnumFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHEnumFormater.h; sourceTree = "<group>"; };
-		8ED1FABC1BC9307100230502 /* HHEnumFormater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHEnumFormater.m; sourceTree = "<group>"; };
 		8EE1BC831BC936B0004293BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8EE1BC851BC9375F004293BD /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
 		8EE1BC861BC9375F004293BD /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
@@ -115,8 +112,6 @@
 			children = (
 				8ED1FAA71BC92DEE00230502 /* HHEnumeration.h */,
 				8ED1FAA81BC92DEE00230502 /* HHEnumeration.m */,
-				8ED1FABB1BC9307100230502 /* HHEnumFormater.h */,
-				8ED1FABC1BC9307100230502 /* HHEnumFormater.m */,
 				8EA66E8F1BC9FF610013EEC9 /* HHKeyboardEvent.h */,
 				8EA66E901BC9FF610013EEC9 /* HHKeyboardEvent.m */,
 				8E4D2B1B1BE44DEE0064857F /* HHCompletionItem.h */,
@@ -216,7 +211,6 @@
 			files = (
 				8E4D2B1D1BE44DEE0064857F /* HHCompletionItem.m in Sources */,
 				8E02B1591C18936A00E050D5 /* DVTTextCompletionController+HHEnumeration.m in Sources */,
-				8ED1FABD1BC9307100230502 /* HHEnumFormater.m in Sources */,
 				8ED1FAA91BC92DEE00230502 /* HHEnumeration.m in Sources */,
 				8EE1BC871BC9375F004293BD /* MethodSwizzle.m in Sources */,
 				8EC8D3BC1BE3BA1D0020D78F /* HHCompletionStrategy.m in Sources */,

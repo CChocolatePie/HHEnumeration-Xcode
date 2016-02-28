@@ -7,7 +7,6 @@
 //
 
 #import "HHEnumeration.h"
-#import "HHEnumFormater.h"
 #import "XcodeMisc.h"
 #import "HHKeyboardEvent.h"
 #import "HHCompletionItem.h"
@@ -29,6 +28,8 @@ BOOL _isFirstNoti;
 @property (strong, nonatomic) NSArray *enumMembers;
 @property (copy, nonatomic) NSString *matchString1;
 @property (copy, nonatomic) NSString *matchString2;
+@property (assign, nonatomic) NSRange lastRange;
+@property (strong, nonatomic) NSTimer *timer;
 
 @end
 
@@ -56,8 +57,9 @@ BOOL _isFirstNoti;
         _isFirstNoti = YES;
         shouldCall = NO;
         isAccepted = NO;
-        self.enumMembers = [NSMutableArray array];
+        _enumMembers = [NSMutableArray array];
         isOC = NO;
+        
     }
     return self;
 }
@@ -91,10 +93,10 @@ BOOL _isFirstNoti;
             NSRange selectedRange = [[selectedRanges objectAtIndex:0] rangeValue];
             NSString *storageText = textView.textStorage.string;
             NSString *selectedText = [storageText substringWithRange:selectedRange];
-
+            
             if (![selectedText isEqualToString:@""]){
                 
-                NSString *enumName = [HHEnumFormater enumFormaterWithString:selectedText];
+                NSString *enumName = [self enumNameWithString:selectedText];
                 if (enumName == nil) {
                     return;
                 }
@@ -102,11 +104,23 @@ BOOL _isFirstNoti;
                 NSArray *tempArray = [self tryFindEnum:enumName];
                 if (tempArray.count >= 1) {
                     
+                    // 当撤销时 连续两次range 一致  不需 进行 枚举成员提示
+                    if (NSEqualRanges(_lastRange, selectedRange)) {
+                        
+                        // 设置1秒后 清空 lastRange
+                        [_timer invalidate];
+                        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(clearRange) userInfo:nil repeats:NO];
+                        return;
+                        
+                    }
+                    
                     [HHKeyboardEvent eventWithKeyCode:kVK_Delete];
                     shouldCall = YES;
                     currentItems = [NSMutableArray arrayWithArray:tempArray];
                     tempArray = nil;
                     [HHKeyboardEvent eventWithKeyCode:kVK_Escape];
+                 
+                    _lastRange = selectedRange;
                     
                 }
                 
@@ -114,8 +128,8 @@ BOOL _isFirstNoti;
 
                 if (isAccepted) {
                     isAccepted = NO;
-                    NSString *displayType = [NSString stringWithString:completionItem.displayType];
-                    NSString *displayText = [NSString stringWithString:completionItem.displayText];
+                    NSString *displayType = completionItem.displayType;
+                    NSString *displayText = completionItem.displayText;
                     
                     if ([displayType containsString:@"*"]) {
                         return;
@@ -124,31 +138,32 @@ BOOL _isFirstNoti;
                     NSArray *tempArray = [self tryFindEnum:displayType];
                     if (tempArray.count >= 1) {
                         
-                        self.enumMembers = tempArray;
-                        // 点语法 赋值 时
-                        self.matchString1 = [NSString stringWithFormat:@".%@ = ",displayText];
-                        // 点语法 或 枚举变量   判断枚举类型 时
-                        self.matchString2 = [NSString stringWithFormat:@"%@ == ",displayText];
+                        _enumMembers = tempArray;
+                        // 点语法 或 枚举变量  赋值 时
+                        _matchString1 = [NSString stringWithFormat:@"%@ = ",displayText];
+                        // 点语法 或 枚举变量  判断枚举类型 时
+                        _matchString2 = [NSString stringWithFormat:@"%@ == ",displayText];
+                        
                         
                     }
                 }
                 
-                if((self.matchString1 != nil) && (self.matchString1.length > 0)){
+                if((_matchString1 != nil) && (_matchString1.length > 0)){
                     
-                    NSUInteger length = self.matchString2.length;
+                    NSUInteger length = _matchString2.length;
                     if (storageText.length < length) {
                         return;
                     }
                     NSRange rang = NSMakeRange(selectedRange.location - length, length);
                     NSString *subStr = [storageText substringWithRange:rang];
                     
-                    if ([subStr containsString:self.matchString1] ||
-                        [subStr isEqualToString:self.matchString2] ) {
+                    if ([subStr containsString:_matchString1] ||
+                        [subStr isEqualToString:_matchString2] ) {
                         
-                        self.matchString1 = nil;
-                        self.matchString2 = nil;
+                        _matchString1 = nil;
+                        _matchString2 = nil;
                         shouldCall = YES;
-                        currentItems = [NSMutableArray arrayWithArray:self.enumMembers];
+                        currentItems = [NSMutableArray arrayWithArray:_enumMembers];
                         [HHKeyboardEvent eventWithKeyCode:kVK_Escape];
                         
                     }
@@ -194,6 +209,26 @@ BOOL _isFirstNoti;
         }
 
     }
+    return nil;
+}
+- (void)clearRange
+{
+    [_timer invalidate];
+    shouldCall = NO;
+    self.lastRange = NSMakeRange(0, 0);
+}
+- (NSString *)enumNameWithString:(NSString *)string
+{
+    
+    NSRegularExpression *reg = [NSRegularExpression regularExpressionWithPattern:@"(?<=<#\\()[a-zA-Z]*(?=\\)#>)" options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    NSRange rang = [reg rangeOfFirstMatchInString:string options:0 range:NSMakeRange(0, string.length)];
+    
+    if (rang.length != 0) {
+        
+        return [string substringWithRange:rang];
+    }
+    
     return nil;
 }
 
