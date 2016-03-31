@@ -128,7 +128,20 @@ BOOL _isFirstNoti;
 
                 if (isAccepted) {
                     isAccepted = NO;
-                    NSString *displayType = completionItem.displayType;
+                    
+                    if (!completionItem.displayType) {
+                        return;
+                    }
+                    
+                    NSString *displayType = nil;
+                    
+                    NSRange range = [completionItem.displayType rangeOfString:@"enum "];
+                    if (range.location != NSNotFound) {
+                        displayType = [completionItem.displayType substringFromIndex:(range.location + range.length)];
+                    } else {
+                        displayType = completionItem.displayType;
+                    }
+                    
                     NSString *displayText = completionItem.displayText;
                     
                     if ([displayType containsString:@"*"]) {
@@ -151,7 +164,7 @@ BOOL _isFirstNoti;
                 if((_matchString1 != nil) && (_matchString1.length > 0)){
                     
                     NSUInteger length = _matchString2.length;
-                    if (storageText.length < length) {
+                    if (storageText.length < length || selectedRange.location < length) {
                         return;
                     }
                     NSRange rang = NSMakeRange(selectedRange.location - length, length);
