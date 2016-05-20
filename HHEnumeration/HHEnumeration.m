@@ -100,14 +100,15 @@ BOOL _isFirstNoti;
                 if (enumName == nil) {
                     return;
                 }
-
+                
                 NSArray *tempArray = [self tryFindEnum:enumName];
+                
                 if (tempArray.count >= 1) {
                     
                     // 当撤销时 连续两次range 一致  不需 进行 枚举成员提示
                     if (NSEqualRanges(_lastRange, selectedRange)) {
                         
-                        // 设置1秒后 清空 lastRange
+                        // 设置1秒后 清空 lastRange, 解决 撤销crash bug
                         [_timer invalidate];
                         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(clearRange) userInfo:nil repeats:NO];
                         return;
@@ -233,7 +234,7 @@ BOOL _isFirstNoti;
 - (NSString *)enumNameWithString:(NSString *)string
 {
     
-    NSRegularExpression *reg = [NSRegularExpression regularExpressionWithPattern:@"(?<=<#\\()[a-zA-Z]*(?=\\)#>)" options:NSRegularExpressionCaseInsensitive error:nil];
+    NSRegularExpression *reg = [NSRegularExpression regularExpressionWithPattern:@"((?<=<#\\()[a-zA-Z]+(?=\\)#>))|((?<=<#)[a-zA-Z]+(?=\\b))" options:NSRegularExpressionCaseInsensitive error:nil];
     
     NSRange rang = [reg rangeOfFirstMatchInString:string options:0 range:NSMakeRange(0, string.length)];
     
