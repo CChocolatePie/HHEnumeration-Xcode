@@ -1,7 +1,3 @@
-<p align="center" >
-<img src="img/bugEnding.png" title="bugEnding Organization logo" float=left>
-</p>
-
 -
 ### What is it?
 This plugin is used to autocompletion enum members for Objective-C
